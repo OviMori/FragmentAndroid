@@ -13,9 +13,9 @@ import androidx.fragment.app.Fragment
 
 class TextFragment : Fragment(){
 
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Get the custom view for this fragment layout
-        val view = inflater!!.inflate(R.layout.layout_text_fragment,container,false)
+        val view = inflater.inflate(R.layout.layout_text_fragment,container,false)
 
         // Get the text view widget reference from custom layout
         val tv = view.findViewById<TextView>(R.id.text_view)
